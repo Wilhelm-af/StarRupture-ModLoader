@@ -28,8 +28,7 @@ jobs:
       - name: Verify outputs
         run: |
           test -f build/dwmapi.dll
-          test -f build/JunctionFix.dll
-          ls -lh build/dwmapi.dll build/JunctionFix.dll
+          ls -lh build/dwmapi.dll
 
       - name: Upload artifacts
         uses: actions/upload-artifact@v4
@@ -37,16 +36,12 @@ jobs:
           name: StarRupture-ModLoader
           path: |
             build/dwmapi.dll
-            build/JunctionFix.dll
-            mods/JunctionFix/mod.json
 
       - name: Package release zip
         if: startsWith(github.ref, 'refs/tags/v')
         run: |
-          mkdir -p release/Mods/JunctionFix
+          mkdir -p release
           cp build/dwmapi.dll release/
-          cp build/JunctionFix.dll release/Mods/JunctionFix/
-          cp mods/JunctionFix/mod.json release/Mods/JunctionFix/
           cd release && zip -r ../StarRupture-ModLoader.zip .
 
       - name: Create GitHub Release
