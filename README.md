@@ -1,3 +1,13 @@
+# Collaboration :D
+
+So we were two idiots starting at this at the same time, Comming up with idea and such to how to solve problems.
+After some time now https://github.com/AlienXAXS has made a more "Stable" thought thru modloader that works for both Client And Server.
+So with that, im deprecating this project and will help AlienXAXS with his projects to have a more uniformed solution to the users out there.
+
+Makeing it simple for people to select one modloader for everything instead of having to choose between one and another and or using both.
+Here is the link to the [ModLoader](https://github.com/AlienXAXS/StarRupture-ModLoader) and ill see you there.
+
+
 # StarRupture ModLoader
 
 A DLL mod for [Star Rupture](https://store.steampowered.com/app/1187810/Star_Rupture/) that simplifyes dll loading as a ModLoader
